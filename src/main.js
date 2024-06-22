@@ -1,5 +1,3 @@
-debugger
-
 import {
     imageTemplate,
     imagesTemplate,

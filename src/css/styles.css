@@ -86,6 +86,7 @@ img {
   padding-right: 20px;
   display: flex;
   gap: 32px;
+  border: 1px solid #808080;
 }
 .image-wrap-description {
   display: flex;
