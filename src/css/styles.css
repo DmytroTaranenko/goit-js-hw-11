@@ -22,14 +22,50 @@ img {
 }
 
 .form {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
 .form-input {
-  margin-bottom: 20px;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  padding-left: 16px;
+  outline: transparent;
+}
+
+.form-input:hover {
+  border-color: #000000;
+}
+
+.form-input:focus {
+  border-color: #4e75ff;
 }
 .form-btn {
+  margin-left: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  min-width: 91px;
+  border: transparent;
+}
+
+.form-btn:hover {
+  background-color: #6c8cff;
+}
+
+.form-btn:disabled {
+  background-color: #b3bbd9;
 }
 .gallery-list {
   width: 1128px;
@@ -38,7 +74,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  margin: auto;
+  margin: 20px auto;
 }
 .gallery-item {
   width: calc((100% - 48px) / 3);
