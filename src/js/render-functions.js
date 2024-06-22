@@ -1,7 +1,8 @@
 export function imageTemplate(item) {
     return `<li class="gallery-item">
-        <a href="${item.largeImageURL}" class="gallery-link" ></a>
+        <a href="${item.largeImageURL}" class="gallery-link" >
         <img class="image-item" src="${item.webformatURL}" alt="${item.tags}" width="360" height="200" />
+        </a>
         <div class="wrap">
           <div>
             <h4 class="image-title">likes</h4>
@@ -28,10 +29,10 @@ export function imagesTemplate(arr) {
 }
 
 
-// export function showLoader() {
-//   loader.classList.remove('hidden');
-// }
+export function showLoader(loader) {
+  loader.classList.remove('hidden');
+}
 
-// export function hideLoader() {
-//   loader.classList.add('hidden');
-// }
+export function hideLoader(loader) {
+  loader.classList.add('hidden');
+}
