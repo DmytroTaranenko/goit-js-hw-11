@@ -30,7 +30,6 @@ export function imagesTemplate(arr) {
 
 
 export function showLoader(loader) {
-  if (!loader || loader.value.trim() === '') return; 
   loader.classList.remove('hidden');
 }
 

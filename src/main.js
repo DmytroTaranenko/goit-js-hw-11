@@ -1,3 +1,4 @@
+debugger
 import {
     imageTemplate,
     imagesTemplate,
@@ -23,7 +24,6 @@ formEl.addEventListener('submit', e => {
     const formData = new FormData(formEl)
     const userInput = formData.get('userInput').trim()
 
-    showLoader(loader)
     if (userInput === '') {
         iziToast.warning({
             title: 'Empty search',
@@ -31,6 +31,7 @@ formEl.addEventListener('submit', e => {
         });
         return;
     }
+    showLoader(loader)
     getImages(userInput).then(data => {
         if (data.hits.length !== 0) {
                 const markup = imagesTemplate(data.hits)
