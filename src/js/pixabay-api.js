@@ -10,7 +10,7 @@ export function getImages(userInput) {
         safesearch: true
     })
 
-    const url = `${BASE_URL}${END_POINT}?${params}`
+    const url = `${BASE_URL}?${params}`
 
     return fetch(url).then(result => result.json()).catch(err => console.log(err))
 }
