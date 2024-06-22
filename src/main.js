@@ -10,6 +10,8 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 const formEl = document.querySelector('.form')
 const galleryEl = document.querySelector('.gallery-list')
 
+
+
 formEl.addEventListener('submit', e => {
     e.preventDefault()
 
@@ -28,8 +30,6 @@ formEl.addEventListener('submit', e => {
         if (data.hits.length !== 0) {
             const markup = imagesTemplate(data.hits)
             galleryEl.innerHTML = markup
-            const lightbox = new SimpleLightbox('.gallery-list a', {
-            });
             lightbox.refresh()
             
         } else {
@@ -49,3 +49,7 @@ formEl.addEventListener('submit', e => {
     formEl.reset()
 })
 
+const lightbox = new SimpleLightbox('.gallery-list a', {
+    captionsData: 'alt',
+    captionDelay: 250,
+});
